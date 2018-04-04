@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Copperplate.ttc">
-            <string>Copperplate</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,55 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LTCLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiS-qd-Agc">
-                                <rect key="frame" x="16" y="68" width="343" height="50"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LTCPrice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiS-qd-Agc">
+                                <rect key="frame" x="16" y="68" width="343" height="35.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.34509803921568627" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTCPrice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNM-5i-pYn">
-                                <rect key="frame" x="16" y="173.5" width="343" height="35.5"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="151.5" width="343" height="35.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.34509803921568627" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="35"/>
-                                <color key="textColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC : LTC Ratio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLU-vv-LKc">
-                                <rect key="frame" x="16" y="259" width="343" height="35.5"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="235" width="343" height="35.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.34509803921568627" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTCPrice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14a-u8-UzL">
-                                <rect key="frame" x="16" y="344.5" width="343" height="35.5"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cryptoRatio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkm-EU-LDt">
+                                <rect key="frame" x="16" y="318.5" width="343" height="35.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.34509803921568627" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="35"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cryptoRatio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkm-EU-LDt">
-                                <rect key="frame" x="16" y="344" width="343" height="35.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="35"/>
+                                <color key="textColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.058823529411764705" green="0.18823529411764706" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZLU-vv-LKc" secondAttribute="trailing" constant="16" id="2Ek-Au-3zD"/>
-                            <constraint firstItem="14a-u8-UzL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6oy-8I-noP"/>
+                            <constraint firstItem="XNM-5i-pYn" firstAttribute="top" secondItem="KiS-qd-Agc" secondAttribute="bottom" constant="48" id="3JA-yE-cC2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KiS-qd-Agc" secondAttribute="trailing" constant="16" id="44W-CS-WQg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KiS-qd-Agc" secondAttribute="trailing" constant="16" id="A7Q-0e-3ek"/>
-                            <constraint firstItem="XNM-5i-pYn" firstAttribute="top" secondItem="KiS-qd-Agc" secondAttribute="bottom" constant="70" id="AXl-5F-fvQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XNM-5i-pYn" secondAttribute="trailing" constant="16" id="FMb-C2-kLq"/>
+                            <constraint firstItem="KiS-qd-Agc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="MJM-hq-QxV"/>
                             <constraint firstItem="KiS-qd-Agc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Mvl-5n-abj"/>
-                            <constraint firstItem="14a-u8-UzL" firstAttribute="top" secondItem="ZLU-vv-LKc" secondAttribute="bottom" constant="50" id="S95-gh-PEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lkm-EU-LDt" secondAttribute="trailing" constant="16" id="S6u-VC-lrZ"/>
+                            <constraint firstItem="ZLU-vv-LKc" firstAttribute="top" secondItem="XNM-5i-pYn" secondAttribute="bottom" constant="48" id="Saq-e8-Uaj"/>
+                            <constraint firstItem="lkm-EU-LDt" firstAttribute="top" secondItem="ZLU-vv-LKc" secondAttribute="bottom" constant="48" id="YGp-9S-VCi"/>
+                            <constraint firstItem="ZLU-vv-LKc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZIf-EZ-Mp2"/>
                             <constraint firstItem="XNM-5i-pYn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aOF-zR-N9o"/>
-                            <constraint firstItem="ZLU-vv-LKc" firstAttribute="top" secondItem="XNM-5i-pYn" secondAttribute="bottom" constant="50" id="b11-gf-9he"/>
+                            <constraint firstItem="lkm-EU-LDt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bWH-lG-w7u"/>
+                            <constraint firstItem="XNM-5i-pYn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="d1P-q6-S7N"/>
+                            <constraint firstItem="KiS-qd-Agc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="faq-6E-hxG"/>
                             <constraint firstItem="ZLU-vv-LKc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jOL-z2-AXh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="14a-u8-UzL" secondAttribute="trailing" constant="16" id="mlQ-tp-6lV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XNM-5i-pYn" secondAttribute="trailing" constant="16" id="kNV-3R-fMj"/>
                             <constraint firstItem="KiS-qd-Agc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="neJ-sC-6yJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZLU-vv-LKc" secondAttribute="trailing" constant="16" id="pZh-dz-YMt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
