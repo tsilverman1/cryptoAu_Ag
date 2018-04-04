@@ -1,0 +1,6 @@
+framework module Pods_cryptoAu_Ag {
+  umbrella header "Pods-cryptoAu_Ag-umbrella.h"
+
+  export *
+  module * { export * }
+}
