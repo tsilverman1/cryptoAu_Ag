@@ -23,6 +23,12 @@ class ViewController: UIViewController {
         getBTCPrice(url: bitcoinURL)
     }
     
+    //** Make Statusbar light (against dark background)
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    //**
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,17 +39,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var cryptoRatio: UILabel!
     
     
-    
-    
-    
     func getLTCPrice(url: String) {
         Alamofire.request(litecoinURL, method: .get).responseJSON { response in
             if response.result.isSuccess {
-                
-                print("Success")
-                
                 let litecoinJSON : JSON = JSON(response.result.value!)
-                print(litecoinJSON)
+//                print(litecoinJSON)
                 self.updateLitecoinPrice(json: litecoinJSON)
                 
             } else {
@@ -51,20 +51,17 @@ class ViewController: UIViewController {
                 self.LTCPrice.text = "Connection Issues"
             }
         }
-        
     }
     
-    
     func updateLitecoinPrice(json : JSON) {
-        let priceResult = json["data"]["amount"]
-//        let priceResultLTC = json["data"]["amount"]
-        cryptoCurrencyPriceModel.LTCamount = String(describing: priceResult)
-        print(priceResult)
+        let priceResultLTC = json["data"]["amount"]
+        cryptoCurrencyPriceModel.LTCamount = String(describing: priceResultLTC)
+        print(priceResultLTC)
         updateUIWithLTCData()
     }
     
     func updateUIWithLTCData (){
-        LTCPrice.text = "$ \(cryptoCurrencyPriceModel.LTCamount) / ŁTC"
+        LTCPrice.text = "$ \(cryptoCurrencyPriceModel.LTCamount) / LTC"
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(15)) {
             self.getLTCPrice(url: self.litecoinURL)
@@ -74,13 +71,9 @@ class ViewController: UIViewController {
     func getBTCPrice(url: String) {
         Alamofire.request(bitcoinURL, method: .get).responseJSON { response in
             if response.result.isSuccess {
-                
-                print("Success")
-                
                 let bitcoinJSON : JSON = JSON(response.result.value!)
-                print(bitcoinJSON)
+//                print(bitcoinJSON)
                 self.updatebitcoinPrice(json: bitcoinJSON)
-                
             } else {
                 print("error")
                 self.BTCPrice.text = "Connection Issues"
@@ -88,27 +81,17 @@ class ViewController: UIViewController {
         }
     }
     
-    
     func updatebitcoinPrice(json : JSON) {
-        let priceResult = json["data"]["amount"]
-//        let priceResultBTC = json["data"]["amount"]
-        cryptoCurrencyPriceModel.BTCamount = String(describing: priceResult)
-        print(priceResult)
+        let priceResultBTC = json["data"]["amount"]
+        cryptoCurrencyPriceModel.BTCamount = String(describing: priceResultBTC)
+        print("BTC = \(priceResultBTC)")
         updateUIWithBTCData()
     }
     
     func updateUIWithBTCData (){
-        BTCPrice.text = "$ \(cryptoCurrencyPriceModel.BTCamount) / ₿TC"
+        BTCPrice.text = "$ \(cryptoCurrencyPriceModel.BTCamount) / BTC"
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(15)) {
             self.getBTCPrice(url: self.bitcoinURL)
-//            self.ratio()
         }
     }
-    
-//    func ratio() {
-//        var cryptoRatio =
-//
-//    }
-    
-    
 }
